@@ -11,7 +11,7 @@ With this protractor-cucumber-typescript boilerplate you can easily start a test
 * feature and step-file examples about how to use
 * no need to compile TypeScript testfiles before running
 * automatically making screenshots on failed steps (you can adjust the filename to whatever you want, it's just a simple setup)
-protractor-multiple-cucumber-html-reporter-plugin)
+* generate latest test report using [protractor-multiple-cucumber-html-reporter-plugin](https://www.npmjs.com/package/protractor-multiple-cucumber-html-reporter-plugin)
 * **NEW:** a configuration to automatically rerun flaky tests with [protractor-flake](https://github.com/NickTomlin/protractor-flake). This can be run with `npm run flake` and will check the logging for failed feature files before protractor exists
 
 It supports and provides:
@@ -48,7 +48,7 @@ And a lot more, see the [`package.json`](package.json)
 2. Run a specific tagged test(s) / featurefile(s). This can be done with `npm run e2e -- --tags=@tagName`. Please check the [docs](https://docs.cucumber.io/tag-expressions/) about how to use tags
 3. Run all the available featurefiles. This can be done with `npm run e2e`
 
-> **If you want to run tests and  nd after failure only rerun the failed ones, then use `npm run flake` to run it with `protractor-flake`**
+> **If you want to run tests and  after failure only rerun the failed ones, then use `npm run flake` to run it with `protractor-flake`**
 
 ### To view the Test Report
 
