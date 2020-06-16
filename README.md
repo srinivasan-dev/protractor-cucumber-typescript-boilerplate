@@ -8,23 +8,18 @@ A boilerplate for starting a Protractor test setup with CucumberJS and TypeScrip
 ## What it can do
 With this protractor-cucumber-typescript boilerplate you can easily start a testproject. With this boilerplate you get:
 
-* working configuration out of the box for **CucumberJS 3.x**
-    * for CucumberJS 1.x support see [here](https://github.com/wswebcreation/protractor-cucumber-typescript-boilerplate/tree/1.1.0) and the [CHANGELOG](./CHANGELOG.md#2.0.0) for the migration steps)
-    * for CucumberJS 2.x support see [here](https://github.com/wswebcreation/protractor-cucumber-typescript-boilerplate/tree/2.x) and the [CHANGELOG](./CHANGELOG.md#3.0.0) for the migration steps)
 * feature and step-file examples about how to use
 * no need to compile TypeScript testfiles before running
 * automatically making screenshots on failed steps (you can adjust the filename to whatever you want, it's just a simple setup)
-* **NEW:** an easy setup for using nice reporting provided by [protractor-multiple-cucumber-html-reporter-plugin](https://github.com/wswebcreation/protractor-multiple-cucumber-html-reporter-plugin)
+protractor-multiple-cucumber-html-reporter-plugin)
 * **NEW:** a configuration to automatically rerun flaky tests with [protractor-flake](https://github.com/NickTomlin/protractor-flake). This can be run with `npm run flake` and will check the logging for failed feature files before protractor exists
 
 It supports and provides:
 
 * [protractor](https://github.com/angular/protractor) version 5.1.2
 * [cucumberjs](https://github.com/cucumber/cucumber-js/) **NEW version 3.x.x support!**
-    * for CucumberJS 1.x support see [here](https://github.com/wswebcreation/protractor-cucumber-typescript-boilerplate/tree/1.1.0)
-    * for CucumberJS 2.x support see [here](https://github.com/wswebcreation/protractor-cucumber-typescript-boilerplate/tree/2.x)
 * [typescript](https://github.com/Microsoft/TypeScript) version 2.5.x
-* [protractor-multiple-cucumber-html-reporter-plugin](https://github.com/wswebcreation/protractor-multiple-cucumber-html-reporter-plugin) version ^1.1.0
+protractor-multiple-cucumber-html-reporter-plugin) version ^1.1.0
 * [protractor-flake](https://github.com/NickTomlin/protractor-flake) version ^3.0.0
 
 ![Snapshot - Report](./assets/multiple-cucumber-html-reporter.jpg "Snapshot - Report")
@@ -64,52 +59,7 @@ cucumberOpts: {
 }
 ```
 
-### Compile error
-When there is a compile error it is thrown like below.
 
-	> protractor-cucumber-typescript-boilerplate@0.1.0 e2e.local /Users/wswebcreation/protractor-cucumber-typescript-boilerplate
-	> protractor e2e-tests/config/protractor.e2e.conf.js
-
-	(node:67283) DeprecationWarning: os.tmpDir() is deprecated. Use os.tmpdir() instead.
-	[09:39:12] I/launcher - Running 1 instances of WebDriver
-	[09:39:12] I/local - Starting selenium standalone server...
-	[09:39:13] I/local - Selenium standalone server started at http://192.168.1.11:56329/wd/hub
-	[09:39:15] E/launcher - Error: TSError: ⨯ Unable to compile TypeScript
-	e2e-tests/features/example.steps.ts (51,51): The return type of an async function or method must be the global Promise<T> type. (1064)
-	    at getOutput (/Users/wswebcreation/protractor-cucumber-typescript-boilerplate/node_modules/ts-node/src/index.ts:312:15)
-	    at /Users/wswebcreation/protractor-cucumber-typescript-boilerplate/node_modules/ts-node/src/index.ts:343:16
-	    at Object.compile (/Users/wswebcreation//protractor-cucumber-typescript-boilerplate/node_modules/ts-node/src/index.ts:459:19)
-	    at Module.m._compile (/Users/wswebcreation/protractor-cucumber-typescript-boilerplate/node_modules/ts-node/src/index.ts:395:43)
-	    at Module._extensions..js (module.js:580:10)
-	    at Object.require.extensions.(anonymous function) [as .ts] (/Users/wswebcreation/protractor-cucumber-typescript-boilerplate/node_modules/ts-node/src/index.ts:398:12)
-	    at Module.load (module.js:488:32)
-	    at tryModuleLoad (module.js:447:12)
-	    at Function.Module._load (module.js:439:3)
-	    at Module.require (module.js:498:17)
-	[09:39:15] E/launcher - Process exited with error code 100
-
-	npm ERR! Darwin 16.4.0
-	npm ERR! argv "/Users/wswebcreation/.nvm/versions/node/v7.5.0/bin/node" "/Users/wswebcreation/.nvm/versions/node/v7.5.0/bin/npm" "run" "e2e.local"
-	npm ERR! node v7.5.0
-	npm ERR! npm  v4.1.2
-	npm ERR! code ELIFECYCLE
-	npm ERR! protractor-cucumber-typescript-boilerplate@0.1.0 e2e.local: `protractor e2e-tests/config/protractor.e2e.conf.js`
-	npm ERR! Exit status 100
-	npm ERR!
-	npm ERR! Failed at the protractor-cucumber-typescript-boilerplate@0.1.0 e2e.local script 'protractor e2e-tests/config/protractor.e2e.conf.js'.
-	npm ERR! Make sure you have the latest version of node.js and npm installed.
-	npm ERR! If you do, this is most likely a problem with the protractor-cucumber-typescript-boilerplate package,
-	npm ERR! not with npm itself.
-	npm ERR! Tell the author that this fails on your system:
-	npm ERR!     protractor e2e-tests/config/protractor.e2e.conf.js
-	npm ERR! You can get information on how to open an issue for this project with:
-	npm ERR!     npm bugs protractor-cucumber-typescript-boilerplate
-	npm ERR! Or if that isn't available, you can get their info via:
-	npm ERR!     npm owner ls protractor-cucumber-typescript-boilerplate
-	npm ERR! There is likely additional logging output above.
-
-	npm ERR! Please include the following file with any support request:
-	npm ERR!     /Users/wswebcreation/protractor-cucumber-typescript-boilerplate/npm-debug.log
 
 ## When you don't have a `*.steps` file
 When you created a `*.feature`-file you can start running the tests and it will throw an output like below.
@@ -251,11 +201,10 @@ See the [`example.steps.ts`](/e2e-tests/features/example.steps.ts) for the imple
 	==============================================================================================
 	    Multiple Cucumber HTML report generated in:
 
-	    /Users/wswebcreation/protractor-cucumber-typescript-boilerplate/.tmp/report/index.html
+	    PROJECT_ROOT_DIR/.tmp/report/index.html
 
-	    Tnx for using Multiple Cucumber HTML report
+	    Thanks for using Multiple Cucumber HTML report
 
-	    Grtz wswebcreation
 	==============================================================================================
 
 ## When tests succeed
@@ -293,18 +242,14 @@ When tests succeed you will see the following
 	==============================================================================================
 	    Multiple Cucumber HTML report generated in:
 
-	    /Users/wswebcreation/protractor-cucumber-typescript-boilerplate/.tmp/report/index.html
+	    PROJECT_ROOT_DIR/.tmp/report/index.html
 
 	    Tnx for using Multiple Cucumber HTML report
 
-	    Grtz wswebcreation
+
 	==============================================================================================
 
 
 # Contribution
-If you like to add some extra info, nice packages or have some improvements, feel free to add a PR.
+If you like to add some extra info, nice packages or have some improvements, feel free to add it and raise merge requests.
 
-
-Grtz,
-
-wswebcreation
