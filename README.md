@@ -264,6 +264,10 @@ When tests succeed you will see the following
 
 	==============================================================================================
 
+# Issues
+If you face any issues, please create a new issue in the below link. so that I will fix this.
+[protractor-cucumber-typescript-boilerplate](https://github.com/srinivasanacg/protractor-cucumber-typescript-boilerplate/issues)
+
 
 # Contribution
 If you like to add some extra info, nice packages or have some improvements, feel free to add it and create Pull Request.
