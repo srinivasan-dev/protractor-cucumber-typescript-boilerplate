@@ -26,7 +26,7 @@ protractor-multiple-cucumber-html-reporter-plugin) version ^1.1.0
 
 And a lot more, see the [`package.json`](package.json)
 
-> This boilerplate is just to give you an initial setup, not how you should code / structure your projects. If you have some tips / beter examples feel free to create a PR
+> This boilerplate is just to give you an initial setup, not how you should code / structure your projects. If you have some tips / beter examples feel free to create a Pull Request.
 
 ## How to use
 ### To see how this works
@@ -251,7 +251,7 @@ When tests succeed you will see the following
 
 
 # Contribution
-If you like to add some extra info, nice packages or have some improvements, feel free to add it and raise merge requests.
+If you like to add some extra info, nice packages or have some improvements, feel free to add it and create Pull Request.
 
 
 # Credits
