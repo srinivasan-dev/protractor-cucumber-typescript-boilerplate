@@ -1,5 +1,5 @@
 <!-- # IMPORTANT
-**This project is not maintained anymore** -->
+**This project is in development** -->
 
 # protractor-cucumber-typescript-boilerplate
 
@@ -33,15 +33,30 @@ And a lot more, see the [`package.json`](package.json)
 
 - do a `git clone` of this project
 - go to the root of the project and execute `npm install`
-- to get the tests running make sure you have a local `webdriver-manager` running (`directConnect` from protractor has some issues)
+- Skip the next 2 steps. If you already installed `webdriver-manager` and it's up and running.
+- Install `webdriver-manager` globally on your machine. To install `webdriver-manager` please run `npm install -g webdriver-manager`.
+- After successful installation of `webdriver-manager` do the following steps.
+    `webdriver-manager update` (Setting up a Selenium Server)
+    `webdriver-manager start` (Starting the Selenium Server)
+    By default, the selenium server will run on http://localhost:4444/wd/hub.
 
-Then there are 3 ways to run tests:
+- to get the tests running make sure you have a local `webdriver-manager` running. (`directConnect` from protractor has some issues, hope I will fix it soon).
+
+### Then there are 3 ways to run tests:
 
 1. Run 1 or multiple featurefiles. This can be done with `npm run e2e -- --feature=example` or `npm run e2e -- --feature= example,playground`. Only provide the name of the featurefile(s) without the `.feature`
 2. Run a specific tagged test(s) / featurefile(s). This can be done with `npm run e2e -- --tags=@tagName`. Please check the [docs](https://docs.cucumber.io/tag-expressions/) about how to use tags
 3. Run all the available featurefiles. This can be done with `npm run e2e`
 
 > **If you want to run tests and  nd after failure only rerun the failed ones, then use `npm run flake` to run it with `protractor-flake`**
+
+### To view the Test Report
+
+- Install `lite-server`. To install `lite-server`, please run `npm install -g lite-server`.
+- After succceful installation of `lite-server`. Goto your PROJECT_ROOT_DIRECTORY/.tmp/report (If you're in linux `cd PROJECT_ROOT_DIRECTORY/.tmp/report`)
+- Then run `lite-server`.
+- By default, lite-server uses port 3000. 
+- That ist. Now you can goto http://localhost:3000/ to view the latest test reports
 
 ### Implement it in your project
 Just copy this to your project. Copy all the `dev-dependencies` to your projects `package.json` and do a new `npm install` of your project.
