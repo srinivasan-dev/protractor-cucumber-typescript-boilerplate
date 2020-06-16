@@ -253,3 +253,6 @@ When tests succeed you will see the following
 # Contribution
 If you like to add some extra info, nice packages or have some improvements, feel free to add it and raise merge requests.
 
+
+# Credits
+This project is based on wswebcreation protractor-cucumber-typescript-boilerplate. I want to thank entire wswebcreation team for creating this awesome project setup.

@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wswebcreation/protractor-cucumber-typescript-boilerplate.git"
+    "url": "git+https://github.com/srinivasanacg/protractor-cucumber-project-setup-boilerplate.git"
   },
   "keywords": [
     "protractor",
@@ -20,12 +20,12 @@
     "typescript",
     "boilerplate"
   ],
-  "author": "wswebcreation",
+  "author": "Srinivasan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wswebcreation/protractor-cucumber-typescript-boilerplate/issues"
+    "url": "https://github.com/srinivasanacg/protractor-cucumber-project-setup-boilerplate/issues"
   },
-  "homepage": "https://github.com/wswebcreation/protractor-cucumber-typescript-boilerplate#readme",
+  "homepage": "https://github.com/srinivasanacg/protractor-cucumber-project-setup-boilerplate#readme",
   "devDependencies": {
     "@types/chai": "^4.0.4",
     "@types/chai-as-promised": "^7.1.0",
